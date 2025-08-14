@@ -1,0 +1,176 @@
+
+/* ======== Global Style ======== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a { text-decoration: none; }
+
+/* ======== Top Bar ======== */
+.top-bar {
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    padding: 8px 0;
+}
+.top-bar .left-text { font-weight: 500; }
+.top-bar .right-text { text-align: right; }
+
+/* ======== Navbar ======== */
+.navbar {
+    background-color: white;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
+.navbar-brand img { height: 50px; }
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #0d6efd;
+}
+.social-icons a {
+    color: black;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.social-icons a:hover { color: #0d6efd; }
+
+/* ======== Banner ======== */
+.banner {
+    background: url('https://images.unsplash.com/photo-1537432376769-00a6ee1e03e1') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+ .banner {
+            background: url('../images/banner-img-2.jfif') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+.banner-overlay {
+    background-color: rgba(0,0,0,0.55);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+.banner-content { z-index: 1; }
+.banner-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+.banner-content p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 18px;
+}
+
+/* ======== Animation Section ======== */
+.animation-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.animation-box {
+    font-size: 22px;
+    font-weight: bold;
+    animation: fadeSlide 4s infinite;
+    color: #0d6efd;
+}
+@keyframes fadeSlide {
+    0% { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+/* ======== About Section ======== */
+
+.about-section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+/* ======== Course Section ======== */
+.course {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+.course-card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+.course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.course-card .card-body { padding: 20px; }
+
+/* ======== Review Section ======== */
+
+.review-section {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+.review-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+.review-card .stars {
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+/* ======== Footer ======== */
+.footer {
+    background-color: #ecf0f3;
+    color: #000;
+    padding: 40px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer a {
+    color: #000;
+    display: block;
+    margin-bottom: 5px;
+}
+.footer a:hover { color: rgb(14, 119, 110); }
+.footer_end{
+  text-align: center;
+}
+.contact{
+  text-align: right;
+}
+<!-- ======== Blog Section CSS ======== -->
+
+.seo-blog h2 {
+    font-weight: bold;
+}
+.seo-blog .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.seo-blog .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.1);
+}
+.seo-blog img {
+    height: 200px;
+    object-fit: cover;
+}
